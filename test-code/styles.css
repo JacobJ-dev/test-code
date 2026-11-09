@@ -1,6 +1,9 @@
 :root {
     --font-primary: "Quicksand", sans-serif;
     --font-color: #36413C;
+    --orange-color-inactive: #DE6C17;
+    --orange-color-active: #FF6D00;
+
 }
 
 body{
@@ -43,10 +46,18 @@ body{
 
 
 .services{
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 0 24px;
+    gap: 24px;
+    padding: 24px;
+    text-align: center;
+}
+
+.services-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: left;
 }
 
 .card{
@@ -72,4 +83,22 @@ body{
 
 .card-body h3, .card-body p{
     margin: 0;
+}
+
+.card-body a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--orange-color-inactive);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.card-body a::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(45deg);
 }

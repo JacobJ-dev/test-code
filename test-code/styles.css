@@ -1,0 +1,10 @@
+:root {
+    --font-primary: "Quicksand", sans-serif;
+    --font-color: #36413C;
+}
+
+body{
+    font-family: var(--font-primary);
+    color: var(--font-color);
+    font-weight: 500;
+}
